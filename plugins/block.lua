@@ -1,4 +1,5 @@
 do
+
 local function block_user_callback(cb_extra, success, result)
   local receiver = cb_extra.receiver
   local user = 'user#id'..result.id
@@ -8,7 +9,6 @@ local function block_user_callback(cb_extra, success, result)
   block_user(user, cb_ok, false)
 end
 end
-
 local function run(msg, matches)
  if msg.to.type == 'chat' then
     local user = 'chat#id'..msg.to.id
@@ -17,16 +17,17 @@ local function run(msg, matches)
       user = 'user#id'..user
       block_user(user, callback, false)
     end
-	        if not is_sudo(msg) or is_realm(msg) and is_admin(msg) then
-    return 'مجاز برای سازنده ربات'
+    if not is_sudo(msg) then
+    return "مجاز برای سازنده ربات"
   end
-    return "کاربر مورد نظر بلاک شد"
+    return "یوزر مورد نظر از ربات بلاک شد"
   end
 end
-
+ 
 return {
   patterns = {
-    "^[!/]block (%d+)$",
+    "^!block (user) (%d+)$",
   },
   run = run,
+
 }
