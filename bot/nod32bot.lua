@@ -224,7 +224,7 @@ function create_config( )
     "invite",
     "all",
     "leave_ban",
-    "admin"
+    "admin",
     "antilink",
     "antitag",
     "linkpv",
@@ -235,7 +235,6 @@ function create_config( )
     "location",
     "fosh",
     "google",
-    "wlc",
     "left",
     "support",
     },
