@@ -468,4 +468,4 @@ Create a realm using !createrealm command
 
 !join 108275521
 
-Telegram cahnnels > (https://telegram.me/Nod322team)
+Telegram cahnnels > (https://telegram.me/Nod32team)
