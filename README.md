@@ -89,7 +89,7 @@
 ### Group creation
 >[!/]creategroup [group name]
 >
->>[!/]creategroup SEED
+>>[!/]creategroup Nod32
 >>>will create a group
 >>>
 >>>_Only works in realms for admins but, sudo users can use it everywhere_
@@ -97,7 +97,7 @@
 ### Realm creation
 >[!/]createrealm [realm name]
 >
->>[!/]createrealm SEED
+>>[!/]createrealm Nod32
 >>>will create a realm
 >>>
 >>>_Only works in realms for admins but, sudo users can use it everywhere_
@@ -137,7 +137,7 @@
 
 ### Setting group name in realm 
 > [!/]setname [Group_id] [text]
->>[!/]setname 123456789 SEED
+>>[!/]setname 123456789 Nod32
 >>>This command will set [text] as name of [Group_id]
 
 ### Setting rules in realm
@@ -284,7 +284,7 @@ _Sudo users and admins can also use this commands in all groups_
 
 ### Changing Group name
 >[!/]setname [name]
->>[!/]setname SEED
+>>[!/]setname Nod32
 >>>This command will set [name] as name of groups
 
 ### Group link
@@ -406,7 +406,7 @@ _Sudo users and admins can also use this commands in all groups_
 
 ### change name|rules|name
 >[!/]changename [group_id] [name]
->>[!/]changename 123456789 SEED
+>>[!/]changename 123456789 Nod32
 >
 >[!/]changrules [group_id] [rules]
 >>[!/]changrules 123456789 rules !
@@ -436,7 +436,7 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 # lets install the bot
 cd $HOME
 git clone https://github.com/BH-YAGHI/yaghibot.git
-cd TeleSeed
+cd TeleNod32
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
@@ -445,7 +445,7 @@ chmod +x launch.sh
 To install everything in one command on debian-based distros, use: (useful for VPS deployment)
 ```sh
 #https://github.com/yagop/telegram-bot/wiki/Installation
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/SEEDTEAM/TeleSeed.git && cd TeleSeed && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/Nod32TEAM/TeleNod32.git && cd TeleNod32 && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
 ### Realm configuration 
 
