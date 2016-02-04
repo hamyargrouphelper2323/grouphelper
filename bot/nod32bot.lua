@@ -241,26 +241,8 @@ function create_config( )
     sudo_users = {158990680},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
-
-https://github.com/SEEDTEAM/TeleSeed
-
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@Rondoozle [Developer]
-@seyedan25 [Manager]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
+    about_text = [[
+https://github.com/BH-YAGHI/yaghibot.git
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -337,111 +319,165 @@ This command will send text to [group_id]
 *Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
-Commands list :
-
+NOD32 Commands list :
+ 
+1-banhammer list ^
+ 
 !kick [username|id]
-You can also do it by reply
+(کیک کردن شخص (حتی با ریپلی)
 
 !ban [ username|id]
-You can also do it by reply
+(بن کردن افراد (حتی با ریپلی)
 
 !unban [id]
-You can also do it by reply
-
-!who
-Members list
-
-!modlist
-Moderators list
-
-!promote [username]
-Promote someone
-
-!demote [username]
-Demote someone
+(انبن کردن افراد (همراه ایدی)
 
 !kickme
-Will kick user
+خروج از گروه
 
-!about
-Group description
+2-Statistics list ^
 
-!setphoto
-Set and locks group photo
-
-!setname [name]
-Set group name
-
-!rules
-Group rules
-
-!id
-return group id or user id
-
-!help
-
-!lock [member|name|bots|leave]	
-Locks [member|name|bots|leaveing] 
-
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
-
-!set rules <text>
-Set <text> as rules
-
-!set about <text>
-Set <text> as about
-
-!settings
-Returns group settings
-
-!newlink
-create/revoke your group link
-
-!link
-returns group link
-
-!owner
-returns group owner id
-
-!setowner [id]
-Will set id as owner
-
-!setflood [value]
-Set [value] as flood sensitivity
+!who
+لیست+ایدی همه اعضا
 
 !stats
-Simple message statistics
+امار کلی گروه
 
-!save [value] <text>
-Save <text> as [value]
-
-!get [value]
-Returns text of [value]
-
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-returns user id
-"!res @username"
-
-!log
-will return group logs
+!modlist
+لیست مدیران گروه
 
 !banlist
-will return group ban list
+لیست اعضا بن شده
 
-**U can use both "/" and "!" 
+3-Rate Member ^
 
+!setowner [id]
+(id ایجاد مدیر جدید (همراه 
 
-*Only owner and mods can add bots in group
+!promote [username]
+(ایجاد ادمین جدید (همراه ریپلی)
 
+!demote [username]
+(برکنار کردن ادمین (همراه ریپلی)
 
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
+4-General changes ^
 
-*Only owner can use res,setowner,promote,demote and log commands
+!setname [name]
+ایجاد اسم جدید برای گروه
 
+!setphoto
+ایجاد عکس جدید برای پروفایل گروه
+
+!set rules <text>
+ایجاد قانون جدید برای گروه
+
+!set about <text>
+ایجاد درباره گروه
+
+!setflood [value]
+حساسیت به اسپم در گروه
+
+5-View details ^
+
+!about
+درباره گروه
+
+!rules
+قوانین گروه
+
+!settings
+دیدن تنظیمات فعلی گروه
+
+!help
+لیست دستورات ربات
+
+6-Security Group ^
+
+!lock member 
+قفل ورود اعضا جدید
+
+!lock name
+قفل اسم گروه
+
+!lock bots
+قفل ورود ربات ها
+
+!lock leave
+قفل خروج=بن گروه
+
+!lock link
+قفل تبلیغات و لینک در گروه
+
+!lock tag
+قفل استفاده از # و @ در گروه
+
+!lock arabic
+قفل چت ممنوع گروه
+
+!unlock 
+[member*name*bots*leave]
+[link*tag*arabic]
+باز کردن دستورات قفل شده
+
+7-Fun time ^
+
+!time country city
+ساعت کشور مورد نظر
+
+!loc country city
+مشخصات کشور و شهر مورد نظر
+
+!google
+سرچ مطلب مورد نظر از گوگل
+
+8-Service Provider ^
+
+!newlink
+ایجاد لینک جدید
+
+!link
+نمایش لینک گروه
+
+!linkpv
+فرستادن لینک گروه تو پیوی
+(حتما شماره ربات را سیو کنید)
+
+!invite username
+اضافه کردن شخص تو گروه
+(حتما شماره ربات را سیو کرده باشد)
+
+9-Member Profile and Group ^
+
+!owner
+مدیر گروه
+
+!id
+ایدی شخص مورد نظر
+
+!res [username]
+در اوردن ایدی شخص مورد نظر
+
+!settings
+تنظیمات فعلی گروه
+
+10-bot number & support ^
+
+!share
+دریافت شماره ربات
+
+!joinnod32
+وصل شدن به ساپورت
+
+you can use both "/" and "!" 
+شما میتوانید از ! و / استفاده کنید
+
+Developer: @behroozYaghi
+توسعه دهنده
+
+channel: @nod32team
+کانال ما
+
+G00D LUCK ^_^
 ]]
   }
   serialize_to_file(config, './data/config.lua')
