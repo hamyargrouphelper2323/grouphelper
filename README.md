@@ -216,7 +216,7 @@
 >>>This command will set [User_id] as the owner of [group_id]
 
 ### Bot stats 
->[!/]stats teleseed
+>[!/]stats teleNod32
 >>This command will return bot stats
 
 # Realm Help
