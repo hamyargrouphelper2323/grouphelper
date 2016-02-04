@@ -651,11 +651,11 @@ local function demote(receiver, member_username, member_id)
     return send_large_msg(receiver, 'این گروه به رسمیت شناخته نشده است')
   end
   if not data[group]['moderators'][tostring(member_id)] then
-    return send_large_msg(receiver, member_username..'ادمین شد')
+    return send_large_msg(receiver, member_username.. 'ادمین شد')
   end
   data[group]['moderators'][tostring(member_id)] = nil
   save_data(_config.moderation.data, data)
-  return send_large_msg(receiver, member_username..'ادمین شد')
+  return send_large_msg(receiver, member_username.. 'از ادمینی برکنار شد')
 end
 
 local function demote_by_reply(extra, success, result)
