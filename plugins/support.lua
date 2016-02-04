@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-  return " لینک ساپورت نود32 : \n https://telegram.me/joinchat/Ch4fUAZ0J0G4LP1-3EwMRg"
+  return "دستور زیر را به پیوی ربات ارسال کنید تا به گروه ساپورت وصل شوید   join 108275521!"
   end
 return {
   description = "shows persian support", 
