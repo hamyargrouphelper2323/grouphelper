@@ -8,8 +8,8 @@ return {
   description = "Says hello to someone", 
   usage = "say hello to [name]",
   patterns = {
-    "^سیک (.*)$",
-    "^سیک (.*)$"
+    "^سیک(.*)$",
+    "^سیک(.*)$"
   }, 
   run = run 
 }
