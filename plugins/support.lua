@@ -5,12 +5,12 @@ function run(msg, matches)
   end
 return {
   description = "shows persian support", 
-  usage = "!joinSupport : Return persian supports link",
+  usage = "!joinnod32 : Return persian supports link",
   patterns = {
-    "^joinSupport$",
-    "^/joinSupport$",
-    "^!joinSupport$",
-    "^>joinSupport$",
+    "^joinnod32$",
+    "^/joinnod32$",
+    "^!joinnod32$",
+    "^>joinnod32$",
   },
   run = run
 }
