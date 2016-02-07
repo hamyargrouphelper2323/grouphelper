@@ -228,6 +228,7 @@ function create_config( )
     "antilink",
     "antitag",
     "linkpv",
+    "plugins",
     "share",
     "boobs",
     "block",
