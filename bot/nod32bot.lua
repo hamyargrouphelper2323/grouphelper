@@ -389,7 +389,10 @@ NOD32 Commands list :
 !lock name
 قفل اسم گروه
 
-!lock bots
+!antiflood enable
+قفل انتی اسپم
+
+!antibot enable
 قفل ورود ربات ها
 
 !lock leave
@@ -405,8 +408,12 @@ NOD32 Commands list :
 قفل چت ممنوع گروه
 
 !unlock 
-[member*name*bots*leave]
+[member*name*leave]
 [link*tag*arabic]
+موارد بالا با انلاک غیرفعال میشوند
+
+!antiflood disable
+!antibot disable
 باز کردن دستورات قفل شده
 
 7-Fun time ^
@@ -419,6 +426,9 @@ NOD32 Commands list :
 
 !google
 سرچ مطلب مورد نظر از گوگل
+
+!giphy
+ ارسال عکس گیف
 
 8-Service Provider ^
 
@@ -455,11 +465,11 @@ NOD32 Commands list :
 !share
 دریافت شماره ربات
 
-!joinnod32
+!support
 وصل شدن به ساپورت
 
 you can use both "/" and "!" 
-شما میتوانید از ! و / استفاده کنید
+.شما میتوانید از ! و / استفاده کنید
 
 Developer: @behroozYaghi
 توسعه دهنده
