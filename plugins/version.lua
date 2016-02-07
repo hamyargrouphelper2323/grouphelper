@@ -8,6 +8,8 @@ function run(msg, matches)
   
   open git : 
   
+  NOD32 VERSION 4
+  
   GNU GPL v2 license.]]
 end
 
