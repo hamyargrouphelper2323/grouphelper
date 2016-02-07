@@ -244,6 +244,7 @@ function create_config( )
     "Debian_service",
     "versian",
     "info",
+    "lock_join",
     "support"
     },
     sudo_users = {158990680},--Sudo users
