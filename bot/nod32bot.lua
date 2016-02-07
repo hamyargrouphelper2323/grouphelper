@@ -237,13 +237,11 @@ function create_config( )
     "google",
     "left",
     "spm",
-    "info",
     "chatbot",
     "sodu",
     "isX",
     "Debian_service",
     "version",
-    "info",
     "lock_join",
     "support"
     },
@@ -401,12 +399,6 @@ NOD32 Commands list :
 !lock name
 قفل اسم گروه
 
-!antiflood enable
-قفل انتی اسپم
-
-!antibot enable
-قفل ورود ربات ها
-
 !lock leave
 قفل خروج=بن گروه
 
@@ -434,9 +426,6 @@ NOD32 Commands list :
 
 !google
 سرچ مطلب مورد نظر از گوگل
-
-!giphy
- ارسال عکس گیف
  
  !gps
  مکان کشور , شهر مورد نظر تحت گوگل
@@ -467,9 +456,6 @@ NOD32 Commands list :
 
 !res [username]
 در اوردن ایدی شخص مورد نظر
-
-!info
-مشخصات فرد مورد نظر
 
 !settings
 تنظیمات فعلی گروه
