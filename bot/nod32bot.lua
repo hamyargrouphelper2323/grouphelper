@@ -242,6 +242,8 @@ function create_config( )
     "sodu",
     "isX',
     "Debian_service",
+    "versian",
+    "info",
     "support"
     },
     sudo_users = {158990680},--Sudo users
@@ -392,6 +394,9 @@ NOD32 Commands list :
 !lock member 
 قفل ورود اعضا جدید
 
+!lock join
+قفل ورود اعضا جدید توسط لینک
+
 !lock name
 قفل اسم گروه
 
@@ -407,19 +412,15 @@ NOD32 Commands list :
 !lock link
 قفل تبلیغات و لینک در گروه
 
-!lock tag
-قفل استفاده از # و @ در گروه
+!lock tag (anti fosh)
+قفل استفاده از # و @ , فحاشی در گروه
 
 !lock arabic
 قفل چت ممنوع گروه
 
 !unlock 
 [member*name*leave]
-[link*tag*arabic]
-موارد بالا با انلاک غیرفعال میشوند
-
-!antiflood disable
-!antibot disable
+[link*tag*arabic*bots]
 باز کردن دستورات قفل شده
 
 7-Fun time ^
@@ -435,6 +436,9 @@ NOD32 Commands list :
 
 !giphy
  ارسال عکس گیف
+ 
+ !gps
+ مکان کشور , شهر مورد نظر تحت گوگل
 
 8-Service Provider ^
 
@@ -462,6 +466,9 @@ NOD32 Commands list :
 
 !res [username]
 در اوردن ایدی شخص مورد نظر
+
+!info
+مشخصات فرد مورد نظر
 
 !settings
 تنظیمات فعلی گروه
