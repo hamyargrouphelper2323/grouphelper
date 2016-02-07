@@ -240,7 +240,7 @@ function create_config( )
     "info",
     "chatbot",
     "sodu",
-    "isX',
+    "isX",
     "Debian_service",
     "versian",
     "info",
