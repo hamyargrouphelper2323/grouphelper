@@ -237,10 +237,11 @@ function create_config( )
     "google",
     "left",
     "spm",
-    "anti_abuse",
-    "silent.lua",
-    "gpmanager.lua",
+    "info",
     "chatbot",
+    "sodu",
+    "isX',
+    "Debian_service",
     "support"
     },
     sudo_users = {158990680},--Sudo users
