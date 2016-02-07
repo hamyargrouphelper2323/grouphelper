@@ -299,11 +299,11 @@ return "این دستور را فقط مدیر و ادمین ها میتوانن
 end
 local group_tag_lock = data[tostring(target)]['settings']['antitag']
 if group_tag_lock == 'yes' then
-return 'قفل تگ فعال شد اگر کسی از # و @ استفاده کند اخراج میشود'
+return ' ممنوعیت استفاده از @ و # و همچنین فحاشی در گروه فعال شد'
 else
 data[tostring(target)]['settings']['antitag'] = 'yes'
 save_data(_config.moderation.data, data)
-return 'قفل تگ فعال شد اگر کسی از # و @ استفاده کند اخراج میشود'
+return ' ممنوعیت استفاده از @ و # و همچنین فحاشی در گروه فعال شد'
 end
 end
 local function unlock_group_tag(msg, data, target)
@@ -312,11 +312,11 @@ return "این دستور را فقط مدیر و ادمین ها میتوانن
 end
 local group_tag_lock = data[tostring(target)]['settings']['antitag']
 if group_tag_lock == 'no' then
-return 'قفل تگ غیرفعال شد'
+return 'قفل تگ و فحاشی در گروه غیرفعال شد'
 else
 data[tostring(target)]['settings']['antitag'] = 'no'
 save_data(_config.moderation.data, data)
-return 'قفل تگ غیرفعال شد'
+return 'قفل تگ و فحاشی در گروه غیرفعال شد'
 end
 end
 local function lock_group_join(msg, data, target)
