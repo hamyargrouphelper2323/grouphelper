@@ -234,7 +234,6 @@ function create_config( )
     "block",
     "time",
     "location",
-    "fosh",
     "google",
     "left",
     "spm",
