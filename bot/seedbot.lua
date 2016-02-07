@@ -236,7 +236,12 @@ function create_config( )
     "fosh",
     "google",
     "left",
-    "support",
+    "spm",
+    "anti_abuse",
+    "silent.lua",
+    "gpmanager.lua",
+    "chatbot",
+    "support"
     },
     sudo_users = {158990680},--Sudo users
     disabled_channels = {},
