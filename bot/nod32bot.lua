@@ -242,7 +242,7 @@ function create_config( )
     "sodu",
     "isX",
     "Debian_service",
-    "versian",
+    "version",
     "info",
     "lock_join",
     "support"
@@ -481,6 +481,9 @@ NOD32 Commands list :
 
 !support
 وصل شدن به ساپورت
+
+!version
+ورژن ربات
 
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
