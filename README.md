@@ -1,4 +1,4 @@
-یک ربات پیشرفته با امکانات زیر
+NOD32-BOT is new and best bot.
 
 * **A powerful Anti spam with custom sensitivity For each group**
 * **Multiple Realms(admin groups)**
@@ -16,12 +16,13 @@
 * **And ...**
 * 
 
-  حتما قبل از لانچ فایل انتی گیفت را پچ کنید
+Dont forgot update {structures.c} befor lunch [its anti GIF file]
 
-کانال ما
+HOW DO MAKE UPDATE THIS FILE?
 
-@nod32team
+see this git https://github.com/BH-YAGHI/tg.git
 
-سودو
 
-@behroozyaghi
+channel : @nod32team
+
+developer : @behroozyaghi
