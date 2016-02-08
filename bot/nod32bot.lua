@@ -238,8 +238,6 @@ function create_config( )
     "left",
     "spm",
     "chatbot",
-    "sodu",
-    "isX",
     "Debian_service",
     "version",
     "lock_join",
