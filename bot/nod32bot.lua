@@ -238,7 +238,6 @@ function create_config( )
     "left",
     "spm",
     "chatbot",
-    "Debian_service",
     "version",
     "lock_join",
     "support"
@@ -388,6 +387,12 @@ NOD32 Commands list :
 
 6-Security Group ^
 
+!filter + word
+فیلتر کلمه مورد نظر
+
+!filter - word
+حذف کلمه مورد نظر
+
 !lock member 
 قفل ورود اعضا جدید
 
@@ -399,12 +404,6 @@ NOD32 Commands list :
 
 !lock leave
 قفل خروج=بن گروه
-
-!lock link
-قفل تبلیغات و لینک در گروه
-
-!lock tag (anti fosh)
-قفل استفاده از # و @ , فحاشی در گروه
 
 !lock arabic
 قفل چت ممنوع گروه
@@ -427,6 +426,9 @@ NOD32 Commands list :
  
  !gps
  مکان کشور , شهر مورد نظر تحت گوگل
+ 
+ !gif
+ ارسال عکس متحرک
 
 8-Service Provider ^
 
