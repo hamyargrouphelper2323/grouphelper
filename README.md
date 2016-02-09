@@ -48,7 +48,7 @@ HOW DO MAKE UPDATE THIS FILE?
 
 see this git https://github.com/BH-YAGHI/tg.git
 
-
+---------------------------------------------------------------------------------
 channel : https://telegram.me/Nod32team
 
 developer : https://telegram.me/Behroozyaghi
