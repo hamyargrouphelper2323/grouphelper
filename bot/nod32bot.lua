@@ -237,7 +237,6 @@ function create_config( )
     "left",
     "spm",
     "chatbot",
-    "gif",
     "version",
     "support",
     "gps",
