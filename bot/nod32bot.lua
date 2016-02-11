@@ -395,7 +395,7 @@ NOD32 Commands list :
 فیلتر کلمه مورد نظر
 
 !filter - word
-حذف کلمه مورد نظر
+حذف فیلتر کلمه مورد نظر
 
 !lock member 
 قفل ورود اعضا جدید
@@ -430,9 +430,6 @@ NOD32 Commands list :
  
  !gps
  مکان کشور , شهر مورد نظر تحت گوگل
- 
- !gif
- ارسال عکس متحرک
 
 8-Service Provider ^
 
@@ -460,6 +457,9 @@ NOD32 Commands list :
 
 !res [username]
 در اوردن ایدی شخص مورد نظر
+
+!info 
+مخشصات فرد مورد نظر
 
 !settings
 تنظیمات فعلی گروه
