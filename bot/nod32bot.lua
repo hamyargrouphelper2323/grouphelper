@@ -240,7 +240,7 @@ function create_config( )
     "support",
     "gps",
     "stats",
-    "filterworld",
+    "filterword",
     "lock_join"
     },
     sudo_users = {142314165},--Sudo users
