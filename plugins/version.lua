@@ -9,7 +9,7 @@ function run(msg, matches)
   
   open git : https://github.com/BH-YAGHI/NOD32-BOT.git
   
-  NOD32 VERSION 4.5
+  NOD32 VERSION 5
   
   All rights reserved.]]
 end
