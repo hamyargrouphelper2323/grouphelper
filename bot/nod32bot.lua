@@ -397,6 +397,9 @@ NOD32 Commands list :
 !filter - word
 حذف فیلتر کلمه مورد نظر
 
+!listft
+لیست کلمات فیلترشده
+
 !lock member 
 قفل ورود اعضا جدید
 
@@ -406,6 +409,9 @@ NOD32 Commands list :
 !lock name
 قفل اسم گروه
 
+!lock link
+قفل اخراج فرد تبلیغ کننده
+
 !lock leave
 قفل خروج=بن گروه
 
@@ -413,8 +419,8 @@ NOD32 Commands list :
 قفل چت ممنوع گروه
 
 !unlock 
-[member*name*leave]
-[link*tag*arabic*bots]
+[*name*leave]
+[link*arabic*bots]
 باز کردن دستورات قفل شده
 
 7-Fun time ^
@@ -470,7 +476,8 @@ NOD32 Commands list :
 دریافت شماره ربات
 
 !support
-وصل شدن به ساپورت
+دعوت سازنده ربات به گروه
+(در صورت وجود مشکل)
 
 !version
 ورژن ربات
