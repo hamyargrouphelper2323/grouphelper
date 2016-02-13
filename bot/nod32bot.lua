@@ -240,6 +240,7 @@ function create_config( )
     "support",
     "gps",
     "stats",
+    "info",
     "filterword",
     "lock_join"
     },
