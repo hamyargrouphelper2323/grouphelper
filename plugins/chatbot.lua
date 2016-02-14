@@ -6,12 +6,6 @@ end
 if msg.text == "یاقی" then
 	return "کی اسم سازندمو صدا زد؟"
 end
-if msg.text == "بهروز یاقی" then
-	return "کی اسم سازندمو صدا زد؟"
-end
-if msg.text == "یاقی" then
-	return "Barash bezan sak"
-end
 if msg.text == "Umbrella" then
 	return "کیر نود32 هم نی"
 end
@@ -20,6 +14,33 @@ if msg.text == "umbrella" then
 end
 if msg.text == "نود32" then
 	return "hum?"
+end
+if msg.text == "اسپم" then
+	return "کس ننت میذارم بخای اسپم کنی"	
+end
+if msg.text == "زتا" then
+	return "کس ننش بگو مرسی"	
+end
+if msg.text == "ایکس ایگرگ" then
+	return "ایکس ایگرگو همرا ننت گاییدم ابمم ریختم روش"	
+end
+if msg.text == "spam" then
+	return "تو اگه تخم داشتی اسپم کنی الان اینجا بودی"	
+end
+if msg.text == "ایکس" then
+	return "ایکس ایگرگ گاییدم ابمم کس ننته"	
+end
+if msg.text == "ایگرگ" then
+	return "ایکس ایگرگ گاییدم ابمم کس ننته"	
+end
+if msg.text == "x" then
+	return "ایکس ایگرگ گاییدم ابمم کس ننته"	
+end
+if msg.text == "start" then
+	return "تو اگه تخم داشتی گروهو خراب کنی بیا پیش خودم ننتومیگام @behroozyaghi"
+end
+if msg.text == "y" then
+	return "ایکس ایگرگ گاییدم ابمم کس ننته"	
 end
 if msg.text == "Bot" then
 	return "چی کس میگی؟"
@@ -30,7 +51,10 @@ end
 if msg.text == "بای" then
 	return "برو به سلامت سیکتیرکن"
 end
-if msg.text == "بای" then
+if msg.text == "XY" then
+	return "کس ننت میگام سیکتیر اوبی"
+end
+if msg.text == "Xy" then
 	return "Bye Bye"
 end
 end
@@ -41,14 +65,22 @@ return {
 	patterns = {
 		"^سلام$",
 		"^یاقی$",
-		"^[Zz]ac$",
-		"^ZAC$",
 		"^[Bb]ot$",
 		"^[Uu]mbrella$",
 		"^بای$",
+		"^x$",
+		"^y$",
+		"^ایکس$",
+		"^ایگرگ$",
+		"^اسپم$",
+		"^زتا$",
+		"^spam$",
+		"^start$",
+		"^بای$",
+		"^Xy$",
+		"^XY$",
 		"^?$",
 		"^نود32$"
-		"^[Ss]alam$",
 		}, 
 	run = run,
     --privileged = true,
