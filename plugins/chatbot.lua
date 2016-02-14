@@ -1,51 +1,36 @@
 
 local function run(msg)
-if msg.text == "hi" then
+if msg.text == "سلام" then
 	return "Hello bb"
 end
-if msg.text == "Hi" then
-	return "Hello honey"
+if msg.text == "یاقی" then
+	return "کی اسم سازندمو صدا زد؟"
 end
-if msg.text == "Hello" then
-	return "Hi bb"
+if msg.text == "بهروز یاقی" then
+	return "کی اسم سازندمو صدا زد؟"
 end
-if msg.text == "hello" then
-	return "Hi honey"
-end
-if msg.text == "Salam" then
-	return "Salam aleykom"
-end
-if msg.text == "salam" then
-	return "va aleykol asalam"
-end
-if msg.text == "zac" then
-	return "Barash bezan sak"
-end
-if msg.text == "Zac" then
-	return "Barash bezan sak"
-end
-if msg.text == "ZAC" then
+if msg.text == "یاقی" then
 	return "Barash bezan sak"
 end
 if msg.text == "Umbrella" then
-	return "Yes?"
+	return "کیر نود32 هم نی"
 end
 if msg.text == "umbrella" then
-	return "What?"
+	return "کیر نود32 هم نی"
 end
-if msg.text == "bot" then
+if msg.text == "نود32" then
 	return "hum?"
 end
 if msg.text == "Bot" then
-	return "Huuuum?"
+	return "چی کس میگی؟"
 end
 if msg.text == "?" then
 	return "Hum??"
 end
-if msg.text == "Bye" then
-	return "Babay"
+if msg.text == "بای" then
+	return "برو به سلامت سیکتیرکن"
 end
-if msg.text == "bye" then
+if msg.text == "بای" then
 	return "Bye Bye"
 end
 end
@@ -54,14 +39,15 @@ return {
 	description = "Chat With Robot Server", 
 	usage = "chat with robot",
 	patterns = {
-		"^[Hh]i$",
-		"^[Hh]ello$",
+		"^سلام$",
+		"^یاقی$",
 		"^[Zz]ac$",
 		"^ZAC$",
 		"^[Bb]ot$",
 		"^[Uu]mbrella$",
-		"^[Bb]ye$",
+		"^بای$",
 		"^?$",
+		"^نود32$"
 		"^[Ss]alam$",
 		}, 
 	run = run,
