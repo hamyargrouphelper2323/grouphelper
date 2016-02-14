@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-  return 'NOD32-BOT v5.'.. VERSION .. [[ 
+  return 'NOD32-BOT v5'.. VERSION .. [[ 
  
   Developer : @Behroozyaghi
   
@@ -9,7 +9,7 @@ function run(msg, matches)
   
   Open git : https://github.com/BH-YAGHI/NOD32-BOT.git
   
-  NOD32 VERSION 5.2
+  NOD32 VERSION 5
   
   All rights reserved.
   __________________]]
