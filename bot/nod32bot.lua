@@ -226,7 +226,6 @@ function create_config( )
     "admin",
     "security",
     "linkpv",
-    "share",
     "boobs",
     "time",
     "location",
@@ -239,6 +238,7 @@ function create_config( )
     "support",
     "gps",
     "stats",
+    "botnumber",
     "info",
     "filterword",
     "lock_join"
