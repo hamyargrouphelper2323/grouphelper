@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-  return "سازنده به گروه وارد شد"
+  return "درود به شما سازنده گانی که از گیت من استفاده میکنند لینک گروهتون رو اینجا بذارید و با همین متن تغییر بدید"
   end
 return {
   description = "shows persian support", 
