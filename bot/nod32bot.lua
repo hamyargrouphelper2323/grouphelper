@@ -242,7 +242,7 @@ function create_config( )
     "info",
     "lock_join"
     },
-	    sudo_users = {ایدی شما},--Sudo users
+	    sudo_users = {158990680},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
@@ -394,15 +394,6 @@ NOD32 Commands list :
 لیست دستورات ربات
 
 6-Security Group ^
-
-!filter + word
-فیلتر کلمه مورد نظر
-
-!filter - word
-حذف فیلتر کلمه مورد نظر
-
-!listft
-لیست کلمات فیلترشده
 
 !lock member 
 قفل ورود اعضا جدید
