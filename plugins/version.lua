@@ -7,7 +7,7 @@ function run(msg, matches)
   
   channel : @Nod32team
   
-  open git : https://github.com/BH-YAGHI/NOD32-BOT.git
+  Open git : https://github.com/BH-YAGHI/NOD32-BOT.git
   
   NOD32 VERSION 5
   
