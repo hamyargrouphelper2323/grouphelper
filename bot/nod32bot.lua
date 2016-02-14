@@ -224,11 +224,10 @@ function create_config( )
     "all",
     "leave_ban",
     "admin",
-    "antilink",
+    "security",
     "linkpv",
     "share",
     "boobs",
-    "block",
     "time",
     "location",
     "plugins",
@@ -316,6 +315,8 @@ Only sudo users can run this command
 !bc 123456789 Hello !
 This command will send text to [group_id]
 
+ch: @Nod32team
+
 ]],
     help_text = [[
 NOD32 Commands list :
@@ -338,6 +339,9 @@ NOD32 Commands list :
 
 !who
 لیست+ایدی همه اعضا
+
+!all
+دریافت اطلاعات کلی گروه
 
 !stats
 امار کلی گروه
@@ -410,18 +414,18 @@ NOD32 Commands list :
 !lock name
 قفل اسم گروه
 
-!lock link
+!lock chat
 قفل اخراج فرد تبلیغ کننده
 
 !lock leave
 قفل خروج=بن گروه
 
-!lock arabic
+!lock chat
 قفل چت ممنوع گروه
 
 !unlock 
-[*name*leave]
-[link*arabic*bots]
+[*name*leave*member]
+[chat*join*bots*photo]
 باز کردن دستورات قفل شده
 
 7-Fun time ^
@@ -473,7 +477,7 @@ NOD32 Commands list :
 
 10-bot number & support ^
 
-!share
+!botnumber
 دریافت شماره ربات
 
 !support
@@ -486,10 +490,10 @@ NOD32 Commands list :
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
 
-Developer: @behroozYaghi
+Developer: @BehroozYaghi
 توسعه دهنده
 
-channel: @nod32team
+channel: @Nod32team
 کانال ما
 
 G00D LUCK ^_^
