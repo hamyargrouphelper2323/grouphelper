@@ -223,7 +223,7 @@ function create_config( )
     "invite",
     "all",
     "leave_ban",
-    "admin",
+    "bot_manager",
     "security",
     "linkpv",
     "boobs",
