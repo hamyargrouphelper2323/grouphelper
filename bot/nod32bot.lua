@@ -240,7 +240,6 @@ function create_config( )
     "stats",
     "botnumber",
     "info",
-    "filterword",
     "lock_join"
     },
 	    sudo_users = {ایدی شما},--Sudo users
