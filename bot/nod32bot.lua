@@ -224,7 +224,7 @@ function create_config( )
     "all",
     "leave_ban",
     "bot_manager",
-    "security",
+    "antilink",
     "linkpv",
     "boobs",
     "time",
@@ -243,7 +243,7 @@ function create_config( )
     "filterword",
     "lock_join"
     },
-    sudo_users = {158990680},--Sudo users
+	    sudo_users = {ایدی شما},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
