@@ -3,9 +3,9 @@ do
 function run(msg, matches)
   return 'Telegram Bot '.. VERSION .. [[ 
  
-  Developer : @behroozyaghi
+  Developer : @Behroozyaghi
   
-  channel : @nod32team
+  channel : @Nod32team
   
   open git : https://github.com/BH-YAGHI/NOD32-BOT.git
   
