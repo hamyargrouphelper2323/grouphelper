@@ -204,7 +204,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text ="Group settings:\n•••Lock group link : "..settings.lock_join.."\n•••Lock link : "..settings.antilink.."\n•••Lock group chat : "..settings.lock_arabic.."\n•••Lock group name : "..settings.lock_name.."\n•••Lock group photo : "..settings.lock_photo.."\n•••Lock group member : "..settings.lock_member.."\n•••Lock leave ban : "..leave_ban.."\n•••flood set on : "..NUM_MSG_MAX.."\n•••Bot security : "..bots_protection.. "                              @NOD32TEAM VERSION [BETA]͡° ͜ʖ ͡°"
+  local text ="Group settings:\n•••Lock group link : "..settings.lock_join.."\n•••Lock group chat : "..settings.lock_arabic.."\n•••Lock group name : "..settings.lock_name.."\n•••Lock group photo : "..settings.lock_photo.."\n•••Lock group member : "..settings.lock_member.."\n•••Lock leave ban : "..leave_ban.."\n•••flood set on : "..NUM_MSG_MAX.."\n•••Bot security : "..bots_protection.. "                              Nod32 open git VERSION [BETA]"
   return text
 end
 
@@ -985,7 +985,7 @@ local function run(msg, matches)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked flood ")
         return lock_group_floodmod(msg, data, target)
       end
-      if matches[2] == 'arabic' then
+      if matches[2] == 'chat' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked arabic ")
         return lock_group_arabic(msg, data, target)
       end
@@ -1016,7 +1016,7 @@ local function run(msg, matches)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked flood ")
         return unlock_group_floodmod(msg, data, target)
       end
-      if matches[2] == 'arabic' then
+      if matches[2] == 'chat' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked arabic ")
         return unlock_group_arabic(msg, data, target)
       end
