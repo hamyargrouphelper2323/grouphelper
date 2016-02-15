@@ -16,7 +16,7 @@ local function run(msg, matches)
   if msg.to.type == 'chat' then
     local chat = 'chat#id'..msg.to.id
     chat_add_user(chat, user, callback, false)
-    return "inviting sudo......"
+    return "سازنده ربات وارد گروه شد"
   else 
     return 'This isnt a chat group!'
   end
@@ -25,9 +25,6 @@ end
 
 return {
   description = "support", 
-  usage = {
-    "!invite name [user_name]", 
-    "!invite id [user_id]" },
   patterns = {
     "^[!/](support)$"
   }, 
@@ -35,7 +32,3 @@ return {
 }
 
 end
---Copyright and edit; @behroozyaghi
---Persian Translate; @behroozyaghi
---ch : @nod32team
---کپی بدون ذکر منبع حرام است
