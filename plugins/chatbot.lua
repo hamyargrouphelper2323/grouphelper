@@ -1,8 +1,5 @@
 
 local function run(msg)
-if msg.text == "سلام" then
-	return "Hello bb"
-end
 if msg.text == "یاقی" then
 	return "کی اسم سازندمو صدا زد؟"
 end
@@ -63,7 +60,6 @@ return {
 	description = "Chat With Robot Server", 
 	usage = "chat with robot",
 	patterns = {
-		"^سلام$",
 		"^یاقی$",
 		"^[Bb]ot$",
 		"^[Uu]mbrella$",
