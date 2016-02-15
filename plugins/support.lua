@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-  return "سازنده به گروه وارد شد"
+  return "سازنده ربات به گروه وصل شد"
   end
 return {
   description = "shows persian support", 
