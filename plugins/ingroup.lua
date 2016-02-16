@@ -204,7 +204,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text ="Group settings:\n•••Lock group link : "..settings.lock_join.."\n•••Lock group chat : "..settings.lock_arabic.."\n•••Lock group name : "..settings.lock_name.."\n•••Lock group photo : "..settings.lock_photo.."\n•••Lock group member : "..settings.lock_member.."\n•••Lock leave ban : "..leave_ban.."\n•••flood set on : "..NUM_MSG_MAX.."\n•••Bot security : "..bots_protection.. "                              Nod32 open git VERSION [BETA]"
+  local text ="Group settings:\n•••Lock group join with link : "..settings.lock_join.."\n•••Lock link : "..settings.antilink.."\n•••Lock group chat : "..settings.lock_arabic.."\n•••Lock group name : "..settings.lock_name.."\n•••Lock group photo: "..settings.lock_photo.."\n•••Lock group new member : "..settings.lock_member.."\n•••Lock leave ban : "..leave_ban.."\n•••flood set on : "..NUM_MSG_MAX.."\n•••Bot security  : "..bots_protection.. "                              NOD32 Open Git [BETA]"
   return text
 end
 
