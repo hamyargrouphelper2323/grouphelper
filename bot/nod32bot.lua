@@ -239,7 +239,7 @@ function create_config( )
     "gps",
     "stats",
     "botnumber",
-    "antibot",
+    "anti_bot",
     "info",
     "lock_join"
     },
