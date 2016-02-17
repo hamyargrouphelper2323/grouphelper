@@ -216,6 +216,7 @@ function create_config( )
     "anti_spam",
     "owners",
     "arabic_lock",
+    "anti_bot"
     "set",
     "get",
     "broadcast",
@@ -412,6 +413,12 @@ NOD32 Commands list :
 
 !lock chat
 قفل چت ممنوع گروه
+
+!antibot enable
+ورود ربات ها ممنوع
+
+!antibot disable
+ورود ربات ها ازاد
 
 !unlock 
 [*name*leave*member]
