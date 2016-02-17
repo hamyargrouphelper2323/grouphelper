@@ -210,13 +210,12 @@ function create_config( )
     enabled_plugins = {
     "onservice",
     "inrealm",
-    "ingroup",
     "inpm",
+    "ingroup",
     "banhammer",
     "anti_spam",
     "owners",
     "arabic_lock",
-    "anti_bot"
     "set",
     "get",
     "broadcast",
@@ -240,6 +239,7 @@ function create_config( )
     "gps",
     "stats",
     "botnumber",
+    "antibot",
     "info",
     "lock_join"
     },
@@ -414,7 +414,7 @@ NOD32 Commands list :
 !lock chat
 قفل چت ممنوع گروه
 
-!antibot enable
+!antibot enable 
 ورود ربات ها ممنوع
 
 !antibot disable
