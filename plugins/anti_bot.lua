@@ -60,11 +60,11 @@ local function run (msg, matches)
   local chatId = msg.to.id
   if matches[1] == 'enable' then
     enableAntiBot(chatId)
-    return 'Anti-bot enabled on this chat'
+    return 'ورود ربات ها ممنوع شد'
   end
   if matches[1] == 'disable' then
     disableAntiBot(chatId)
-    return 'Anti-bot disabled on this chat'
+    return 'ورود ربات ها ازاد شد'
   end
   if matches[1] == 'allow' then
     local userId = matches[2]
@@ -111,8 +111,3 @@ return {
   },
   run = run
 }
-
---Copyright; @behroozyaghi
---Persian Translate; @behroozyaghi
---ch : @nod32team
---کپی بدون ذکر منبع حرام است
