@@ -402,6 +402,9 @@ NOD32 Commands list :
 !lock join
 قفل ورود اعضا جدید توسط لینک
 
+!lock link
+قفل تبلیغات
+
 !lock name
 قفل اسم گروه
 
@@ -421,8 +424,8 @@ NOD32 Commands list :
 ورود ربات ها ازاد
 
 !unlock 
-[*name*leave*member]
-[chat*join*bots*photo]
+[*name*leave*member*photo]
+[chat*join*link*leave]
 باز کردن دستورات قفل شده
 
 7-Fun time ^
