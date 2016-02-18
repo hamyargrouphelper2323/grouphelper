@@ -216,7 +216,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text ="Group settings:\n•••Lock group join with link ⛔️: "..settings.lock_join.."\n•••Lock group ads 🛂 : "..settings.antilink.."\n•••Lock group name  🔤: "..settings.lock_name.."\n•••Lock group photo  🖼 : "..settings.lock_photo.."\n•••Lock new member 🚷 : "..settings.lock_member.."\n•••Lock group leave ban ❌: "..leave_ban.."\n•••set flood on 🔣: "..NUM_MSG_MAX.."\n•••Bot security 👾 : "..bots_protection.."                                             •••Nod32 edited version v6 ͡° ͜ʖ ͡°"--bot nod 32 version 4.5 opened by @behroozyaghi
+  local text ="Group settings:\n•••Lock group join with link ⛔️: "..settings.lock_join.."\n•••Lock group ads 🛂 : "..settings.antilink.."\n•••Lock group name  🔤: "..settings.lock_name.."\n•••Lock group photo  🖼 : "..settings.lock_photo.."\n•••Lock new member 🚷 : "..settings.lock_member.."\n•••Lock group leave ban ❌: "..leave_ban.."\n•••set flood on 🔣: "..NUM_MSG_MAX.."\n•••Bot security 👾 : "..bots_protection.."                                             •••Nod32 edited version v6 ͡° ͜ʖ ͡°"--bot nod 32 version 6 opened by @behroozyaghi
   return text
 end
 
