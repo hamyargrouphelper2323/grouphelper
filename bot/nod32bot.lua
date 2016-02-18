@@ -224,7 +224,7 @@ function create_config( )
     "all",
     "leave_ban",
     "bot_manager",
-    "antilink",
+    "anti_link",
     "linkpv",
     "boobs",
     "time",
