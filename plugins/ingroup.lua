@@ -14,7 +14,6 @@ local function check_member_autorealm(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_join = 'no',
-          antitag = 'no',
 	  antilink = 'yes',
 	  lock_name = 'yes',
 	      lock_arabic = 'no',
@@ -48,7 +47,6 @@ local function check_member_realm_add(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_join = 'no',
-		  antitag = 'no',
 		  antilink = 'yes',
 		  lock_name = 'yes',
 		  lock_arabic = 'no',
@@ -84,7 +82,6 @@ function check_member_group(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_join = 'no',
-		  antitag = 'no',
 		  antilink = 'yes',
 		  lock_name = 'yes',
           lock_arabic = 'no',
@@ -120,7 +117,6 @@ local function check_member_modadd(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_join = 'no',
-		  antitag = 'no',
 		  antilink = 'yes',
 		  lock_name = 'yes',
 	      lock_arabic = 'no',
@@ -220,7 +216,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text ="Group settings:\n•••Lock group join with link : "..settings.lock_join.."\n•••Lock group Tag : "..settings.antitag.."\n•••Lock group ads : "..settings.antilink.."\n•••Lock group name : "..settings.lock_name.."\n•••Lock group photo : "..settings.lock_photo.."\n•••Lock group new member : "..settings.lock_member.."\n•••Lock group leave ban : "..leave_ban.."\n•••set flood on : "..NUM_MSG_MAX.."\n•••Bot security  : "..bots_protection.."                                             •••Nod32 Open git pr v5.1 ͡° ͜ʖ ͡°"--bot nod 32 version 4.5 opened by @behroozyaghi
+  local text ="Group settings:\n•••Lock group join with link ⛔️: "..settings.lock_join.."\n•••Lock group ads 🛂 : "..settings.antilink.."\n•••Lock group name  🔤: "..settings.lock_name.."\n•••Lock group photo  🖼 : "..settings.lock_photo.."\n•••Lock new member 🚷 : "..settings.lock_member.."\n•••Lock group leave ban ❌: "..leave_ban.."\n•••set flood on 🔣: "..NUM_MSG_MAX.."\n•••Bot security 👾 : "..bots_protection.."                                             •••Nod32 edited version v6 ͡° ͜ʖ ͡°"--bot nod 32 version 4.5 opened by @behroozyaghi
   return text
 end
 
@@ -1074,8 +1070,8 @@ local function run(msg, matches)
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked leaving ")
        return lock_group_leave(msg, data, target)
      end
-	 if matches[2] == 'tag' then
-       savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked tag ")
+	 if matches[2] == 'ads' then
+       savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked ads ")
        return lock_group_link(msg, data, target)
      end
 	 if matches[2] == 'join' then
@@ -1105,8 +1101,8 @@ local function run(msg, matches)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked chat ")
         return unlock_group_arabic(msg, data, target)
       end
-	  if matches[2] == 'tag' then
-        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked tag ")
+	  if matches[2] == 'ads' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked ads ")
         return unlock_group_link(msg, data, target)
       end
       if matches[2] == 'botsbots' then
