@@ -220,7 +220,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text ="Group settings:\n•••Lock group join : "..settings.lock_join.."\n•••Lock group Tag : "..settings.antitag.."\n•••Lock group link : "..settings.antilink.."\n•••Lock group name : "..settings.lock_name.."\n•••Lock group photo : "..settings.lock_photo.."\n•••Lock group member : "..settings.lock_member.."\n•••Lock group leave : "..leave_ban.."\n•••set flood on : "..NUM_MSG_MAX.."\n•••Bot security  : "..bots_protection.."                                             •••Nod32 Open git pr v5 ͡° ͜ʖ ͡°"--bot nod 32 version 4.5 opened by @behroozyaghi
+  local text ="Group settings:\n•••Lock group join with link : "..settings.lock_join.."\n•••Lock group Tag : "..settings.antitag.."\n•••Lock group ads : "..settings.antilink.."\n•••Lock group name : "..settings.lock_name.."\n•••Lock group photo : "..settings.lock_photo.."\n•••Lock group new member : "..settings.lock_member.."\n•••Lock group leave ban : "..leave_ban.."\n•••set flood on : "..NUM_MSG_MAX.."\n•••Bot security  : "..bots_protection.."                                             •••Nod32 Open git pr v5.1 ͡° ͜ʖ ͡°"--bot nod 32 version 4.5 opened by @behroozyaghi
   return text
 end
 
@@ -339,11 +339,11 @@ return "این دستور را فقط مدیر و ادمین ها میتوانن
 end
 local group_link_lock = data[tostring(target)]['settings']['antilink']
 if group_link_lock == 'yes' then
-return ' امنیت مخصوص ربات نود32 فعال شود و کسی قادر به تغییر ان نیست'
+return 'انتی لینک فعال شد'
 else
 data[tostring(target)]['settings']['antilink'] = 'yes'
 save_data(_config.moderation.data, data)
-return ' امنیت مخصوص ربات نود32 فعال شود و کسی قادر به تغییر ان نیست'
+return 'انتی لینک فعال شد'
 end
 end
 local function unlock_group_link(msg, data, target)
@@ -352,11 +352,11 @@ return "این دستور را فقط مدیر و ادمین ها میتوانن
 end
 local group_link_lock = data[tostring(target)]['settings']['antilink']
 if group_link_lock == 'no' then
-return 'امنیت مخصوص نود32 از سرور قفل شده و شما قادر به تغییر ان نیستید'
+return 'انتی لینک غیرفعال شد'
 else
 data[tostring(target)]['settings']['antilink'] = 'no'
 save_data(_config.moderation.data, data)
-return 'امنیت مخصوص نود32 از سرور قفل شده و شما قادر به تغییر ان نیستید'
+return 'انتی لینک غیرفعال شد'
 end
 end
 local function lock_group_namemod(msg, data, target)
@@ -1074,8 +1074,8 @@ local function run(msg, matches)
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked leaving ")
        return lock_group_leave(msg, data, target)
      end
-	 if matches[2] == 'security' then
-       savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked security ")
+	 if matches[2] == 'tag' then
+       savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked tag ")
        return lock_group_link(msg, data, target)
      end
 	 if matches[2] == 'join' then
@@ -1105,8 +1105,8 @@ local function run(msg, matches)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked chat ")
         return unlock_group_arabic(msg, data, target)
       end
-	  if matches[2] == 'security' then
-        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked security ")
+	  if matches[2] == 'tag' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked tag ")
         return unlock_group_link(msg, data, target)
       end
       if matches[2] == 'botsbots' then
