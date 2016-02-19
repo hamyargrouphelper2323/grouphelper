@@ -1,7 +1,7 @@
 NOD32-BOT is new and best bot.
 _________________________________________________________________________________
 for install  
-
+```bash
 sudo apt-get update
 
 sudo apt-get upgrade
@@ -19,7 +19,7 @@ chmod +x launch.sh
 ./launch.sh install
 
 ./launch.sh
-
+```
 __________________________________
 Do not forgot change help cammonds
 _________________________________________________________________________________
