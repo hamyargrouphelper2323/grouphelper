@@ -245,7 +245,7 @@ function create_config( )
     "time",
     "version"
     },
-	    sudo_users = {158990680},--Sudo users
+	    sudo_users = {172630253},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
@@ -437,18 +437,7 @@ NOD32 Commands list :
 [chat*join*photo]
 باز کردن دستورات قفل شده
 
-7-sticker Mode ^
-
-!sticker warn
-اخطار به فرد استیکر ارسال کننده
-
-!sticker kick
-قفل استفاده از استیکر
-
-!sticker ok
-استفاده از استیکر ازاد
-
-8-Fun time ^
+7-Fun time ^
 
 !time country city
 ساعت کشور مورد نظر
@@ -465,7 +454,7 @@ NOD32 Commands list :
  !calc 3+1
  انجام محاسبات ریاضی
 
-9-Service Provider ^
+8-Service Provider ^
 
 !newlink
 ایجاد لینک جدید
@@ -481,7 +470,7 @@ NOD32 Commands list :
 اضافه کردن شخص تو گروه
 (حتما شماره ربات را سیو کرده باشد)
 
-10-Member Profile and Group ^
+9-Member Profile and Group ^
 !owner
 مدیر گروه
 
@@ -497,7 +486,7 @@ NOD32 Commands list :
 !settings
 تنظیمات فعلی گروه
 
-11-bot number & support ^
+10-bot number & support ^
 
 !botnumber
 دریافت شماره ربات
@@ -514,12 +503,6 @@ NOD32 Commands list :
 
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
-
-Developer: @BehroozYaghi
-توسعه دهنده
-
-channel: @Nod32team
-کانال ما
 
 G00D LUCK ^_^
 ]]
