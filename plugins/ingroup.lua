@@ -14,7 +14,6 @@ local function check_member_autorealm(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_join = 'no',
-          antitag = 'no',
 	  antilink = 'yes',
 	  lock_name = 'yes',
 	      lock_arabic = 'no',
@@ -48,7 +47,6 @@ local function check_member_realm_add(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_join = 'no',
-		  antitag = 'no',
 		  antilink = 'yes',
 		  lock_name = 'yes',
 		  lock_arabic = 'no',
@@ -84,7 +82,6 @@ function check_member_group(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_join = 'no',
-		  antitag = 'no',
 		  antilink = 'yes',
 		  lock_name = 'yes',
           lock_arabic = 'no',
@@ -120,7 +117,6 @@ local function check_member_modadd(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_join = 'no',
-		  antitag = 'no',
 		  antilink = 'yes',
 		  lock_name = 'yes',
 	      lock_arabic = 'no',
@@ -220,7 +216,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "Group settings:\n•••kick new member join with link : "..settings.lock_join.."\n•••Lock ads: "..settings.antilink.."\n•••Lock group chat : "..settings.lock_arabic.."\n•••Lock group name : "..settings.lock_name.."\n•••Lock group photo : "..settings.lock_photo.."\n•••kick new member : "..settings.lock_member.."\n•••Lock group leave ban : "..leave_ban.."\n•••flood set on : "..NUM_MSG_MAX.."\n•••Bot can come : "..bots_protection.. "                              NOD32 [people ver] ͡° ͜ʖ ͡°"
+  local text = "Group settings:\n•••kick new member join with link : "..settings.lock_join.."\n•••Lock ads: "..settings.antilink.."\n•••Lock group chat : "..settings.lock_arabic.."\n•••Lock group name : "..settings.lock_name.."\n•••Lock group photo : "..settings.lock_photo.."\n•••kick new member : "..settings.lock_member.."\n•••Lock group leave ban : "..leave_ban.."\n•••flood set on : "..NUM_MSG_MAX.."\n•••Bot can come : "..bots_protection.. "                              NOD32 VERSION 8.1͡° ͜ʖ ͡°"
   return text
 end
 
@@ -296,16 +292,6 @@ local function unlock_group_bots(msg, data, target)
     save_data(_config.moderation.data, data)
     return 'ورود ربات ها ازاد شد'
   end
-end
-local function lock_group_tag(msg, data, target)
-if not is_momod(msg) then
-return "این دستور را فقط مدیر و ادمین ها میتوانند استفاده کنند"
-end
-end
-local function unlock_group_tag(msg, data, target)
-if not is_momod(msg) then
-return "این دستور را فقط مدیر و ادمین ها میتوانند استفاده کنند"
-end
 end
 local function lock_group_join(msg, data, target)
 if not is_momod(msg) then
