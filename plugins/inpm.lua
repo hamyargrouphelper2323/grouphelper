@@ -75,7 +75,7 @@ local function run(msg, matches)
      end
 end
 end
---
+
 return {
     patterns = {
       "^[/!](chats)$",
@@ -88,7 +88,7 @@ return {
 }
 end
 
---Copyright and edit; @behroozyaghi
+--Copyright; @behroozyaghi
 --Persian Translate; @behroozyaghi
 --ch : @nod32team
 --کپی بدون ذکر منبع حرام است
