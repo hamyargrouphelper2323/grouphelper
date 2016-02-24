@@ -225,9 +225,9 @@ function create_config( )
     "get",
     "google",
     "gps",
-    "info",
     "ingroup",
     "inpm",
+    "filter",
     "inrealm",
     "invite",
     "leave_ban",
@@ -486,7 +486,21 @@ NOD32 Commands list :
 !settings
 تنظیمات فعلی گروه
 
-10-bot number & support ^
+10-filter word Mode ^
+
+!filter set (word)
+اضافه کردن کلمه جدید به لیست
+
+!filter del (word)
+حذف کلمه از لیست
+
+!filter warn (word)
+اخطار به کلمه فیتر شده
+
+!filterlist
+لیست کلمات فیلتر شده
+
+11-bot number & support ^
 
 !botnumber
 دریافت شماره ربات
@@ -504,9 +518,11 @@ NOD32 Commands list :
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
 
+channel: @Nod32Team
+
 G00D LUCK ^_^
 ]]
-  }
+   }
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
 end
