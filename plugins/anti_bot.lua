@@ -60,11 +60,11 @@ local function run (msg, matches)
   local chatId = msg.to.id
   if matches[1] == 'enable' then
     enableAntiBot(chatId)
-    return 'ورود ربات ها ممنوع شد'
+    return 'bot cant come group is safe'
   end
   if matches[1] == 'disable' then
     disableAntiBot(chatId)
-    return 'ورود ربات ها ازاد شد'
+    return 'bot can come group is NOT safe'
   end
   if matches[1] == 'allow' then
     local userId = matches[2]
